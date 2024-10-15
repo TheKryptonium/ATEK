@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.index{
+    background: url(../assets/motor-winding-1024x644.jpg) fixed no-repeat ;
+    background-size: cover;
+}
+
+.connexion{
+    background: url(../assets/motor_hd.webp) fixed no-repeat;
+    background-size: cover;
+}
+
+.inscription{
+    background: url(../assets/motor_hd.webp) fixed no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    background: url(../assets/engineer.jpg) fixed  no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.fonctions{
+    background: url(../assets/engineer.jpg) fixed  no-repeat;
+    background-size: cover;
+}
+
+.principal{
+    margin-top: 15%;
+    text-align: center;
+    animation: charge ease-in-out 2s; 
+}
+
+.welcome{
+    font-size: 5rem;
+}
+
+.motto{
+    font-size:1.2rem;
+    font-style: italic;
+}
+
+.buttons{
+    margin-top: 5%;
+}
+
+.buttons a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.buttons a[href='./inscription.html']{
+    transition: all 0.8s;
+}
+
+.buttons a[href='./inscription.html']:hover{
+    color: #0dcaf0;
+}
+
+@keyframes charge{
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*****************************************CONNEXION***************************************************/
+
+.connect{
+    margin: 10% 20%;
+    padding: 5px 0;
+    width: 60%;
+    height: 400px;
+    background-color: rgba(128, 128, 128, 0.443);
+}
+
+.connect .title{
+    font-weight: bolder;
+    margin: 40px 0;
+    color: white;
+}
+
+.connect .form{
+    width: 60%;
+    color: white;
+    margin: auto auto;
+}
+
+.connect .alert{
+    width: 80%;
+    margin: auto auto;
+}
+
+.connect .form .form-control{
+    border : none;
+    border-radius: 0;
+    border-bottom: 1px rgba(255, 255, 255, 0.489) solid;
+    background-color: transparent;
+}
+
+.connect .form .form-control:focus{
+    box-shadow: none;
+    transition: 0.3s ease-in;
+    border-bottom: 1px white solid;
+    transform: scale(1.08);
+}
+
+.confirm input[type='submit']{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+.confirm input[type="submit"]:hover{
+    color: gray;
+    transform: scale(1.2);
+}
+
+/*****************************************INSCRIPTION***************************************************/
+
+.inscript{
+    margin: 8% 20%;
+    padding: 5px 0;
+    width: 60%;
+    height: 350px;
+    background-color: rgba(128, 128, 128, 0.443);
+}
+
+.inscript .title{
+    font-weight: bolder;
+    margin: 40px 0;
+    color: white;
+}
+
+.inscript .form{
+    width: 60%;
+    color: white;
+    margin: auto auto;
+}
+
+.inscript .form .form-control{
+    border : none;
+    border-radius: 0;
+    border-bottom: 1px rgba(255, 255, 255, 0.489) solid;
+    background-color: transparent;
+}
+
+.inscript .form .form-control:focus{
+    box-shadow: none;
+    transition: 0.3s ease-in;
+    border-bottom: 1px white solid;
+    transform: scale(1.08);
+}
+
+.confirm input[type='submit']{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+.confirm input[type="submit"]:hover{
+    color: gray;
+    transform: scale(1.2);
+}
+
+/*******************************************MENU PRINCIPAL**********************************************/
+.menu .title{
+    color: rgba(95, 158, 160, 0.555);
+}
+
+.menu .logout{
+    text-decoration: none;
+    color: rgba(95, 158, 160, 0.596);
+    transition: color ease-in-out;
+    position: absolute;
+}
+
+.menu .logout:hover{
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.menus .col-5{
+    height: 350px;
+    margin: 5px 5px;
+    background-color: rgba(128, 128, 128, 0.443);
+    padding-top: 175px;
+    transition: all 0.8s;
+    cursor: pointer;
+    animation: sliding 1.5s ease-out;
+}
+
+.menus .col-5 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.menus .col-5:hover{
+    background-color: rgba(0, 0, 0, 0.45);
+    transform: scale(1.2);
+}
+
+@keyframes sliding{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/********************************FONCTIONNALITES********************************************/
+.fonctions .headshot{
+    color: rgba(95, 158, 160, 0.55);
+}
+
+.fonctions .table{
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+
+.fonctions .btn-ajout{
+    background-color: rgba(95, 158, 160, 0.55);
+}
+
+.fonctions .btn-ajout a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.fonctions .retour{
+    color: rgba(95, 158, 160, 0.596);
+    transition: color ease-in-out;
+}
+
+.fonctions .retour:hover{
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.fonct{
+    margin: 8% 20%;
+    padding: 5px 0;
+    width: 60%;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.443);
+}
+
+.fonct .title{
+    font-weight: bolder;
+    margin: 40px 0;
+    color: white;
+}
+
+.fonct .form{
+    width: 60%;
+    color: white;
+    margin: auto auto;
+}
+
+.fonct .form .form-control, .fonct .form .form-select{
+    border : none;
+    border-radius: 0;
+    border-bottom: 1px rgba(255, 255, 255, 0.489) solid;
+    background-color: transparent;
+}
+
+.fonct .form .form-control:focus, .fonct .form .form-select:focus {
+    box-shadow: none;
+    transition: 0.3s ease-in;
+    border-bottom: 1px white solid;
+    transform: scale(1.08);
+}
